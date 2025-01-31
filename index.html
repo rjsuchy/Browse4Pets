@@ -13,6 +13,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+        <!-- ..font aweome -->
+        <script src="https://kit.fontawesome.com/6fb410e074.js" crossorigin="anonymous"></script>
+           
        <!-- customize config -->
     <script>
         tailwind.config = {
@@ -21,6 +24,7 @@
               colors: {
                 clifford: '#da373d',
                 'theme-color': '#FFDC26',
+                'paragraph-color': '#111111',
                 
               }
             }
@@ -38,15 +42,182 @@
 </head>
 <body class="">
   <!-- navbar -->
-  
+  <header class="md:container md:mx-auto"> 
+    <nav class="">
+     <div class="navbar bg-base-100">
+         <div class="flex-1">
+           <div class="dropdown">
+               <!-- hamburgr -->
+             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
 
+             <ul
+               tabindex="0"
+               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+               <li><a>Find Pets</a></li>
+               <li><a>breads</a></li>
+               <li><a>Contact Us</a></li>
+             </ul>
+           </div>
+
+           <!--.......... large device... --> 
+
+
+           <!-- nav-left-->
+            
+            <img src="assets/logo-header.png" alt="">
+            <a class="font-bold text-xl "> Browser<span class="text-theme-color">4</span>pets</a>
+           
+           </div>
+              <!-- nav-middle -->
+           <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find Pets</a></li>
+              <li><a>breads</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+           </div>
+              <!-- nav-right -->
+            <div class=" flex justify-between gap-3">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="btn btn-outline btn-warning">Log In</button>
+            <a class="btn  bg-theme-color text-black">Register</a>
+           </div>
+       </div>
+    </nav>
+  <!-- navend -->
+  
   <main>
 
   <!-- banner -->
+   <section>
+    <div class="flex-col bg-cover bg-center  w-full lg:h-[749px] 2xl:h-[750px] .." style="background-image: url(/assets/cat-big.png)">
+             <div class="pb-40 space-y-5">
+              <!-- bg title -->
+             <h1 class="adlam-display text-[50px]">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+             <!-- bg para -->
+            <p class="sora paragraph-color text-wrap text-[20px]">Discover a world of treats, toys, and essentials handpicked for your <br> furry friends. Shop now and make tails wag with joy!</p>
+                <!-- bg button -->
+            <a class="btn  bg-theme-color text-black text-[20px]">Find a pet</a>
+          </div>
+    </div>
+
+   </section>
 
   <!-- Browse By Categories section -->
+   <section>
+      <div>
+        <h2 class="adlam-display text-[40px] font-normal pt-10 pb-10 ">Browse By Categories</h2>
+      </div>
+      
+      <!-- grids -->
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-4">
+        
+        <!-- card1 -->
+        <div class="card bg-[#F9DF8A] w-30 shadow-xl ">
+          <figure class="px-10 pt-10">
+            <img class="bg-white rounded-full h-20 w-20 "
+              src="/assets/dog-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Dog</h2>
+            <p>3 items</p>
+             
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card bg-[#F9DF8A] w-30 shadow-xl ">
+          <figure class="px-10 pt-10">
+            <img class="bg-white rounded-full h-20 w-20 "
+              src="/assets/fish-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Fish</h2>
+            <p>3 items</p>
+             
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="card bg-[#F9DF8A] w-30 shadow-xl ">
+          <figure class="px-10 pt-10">
+            <img class="bg-white rounded-full h-20 w-20 "
+              src="/assets/cat-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Cat</h2>
+            <p>3 items</p>
+             
+          </div>
+        </div>
+        <!-- card4 -->
+        <div class="card bg-[#F9DF8A] w-30 shadow-xl ">
+          <figure class="px-10 pt-10">
+            <img class="bg-white rounded-full h-20 w-20 "
+              src="/assets/bird-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">bird-cartoon</h2>
+            <p>3 items</p>
+             
+          </div>
+        </div>
+        <!-- card5 -->
+        <div class="card bg-[#F9DF8A] w-30 shadow-xl ">
+          <figure class="px-10 pt-10">
+            <img class="bg-white rounded-full h-20 w-20"
+              src="/assets/mouse-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Small pet</h2>
+            <p>3 items</p>
+             
+          </div>
+        </div>
+        <!-- card6 -->
+        <div class="card bg-[#F9DF8A] w-30 shadow-xl ">
+          <figure class="px-10 pt-10">
+            <img class="bg-white rounded-full h-20 w-20"
+              src="/assets/rabbit-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Rabbit</h2>
+            <p>3 items</p>
+             
+          </div>
+        </div>
+        
+      </div>
+   </section>
 
   <!-- Trending Pet Products section -->
+   <section>
+     <h2 class="adlam-display ">Trending Pet Products</h2>
+   </section>
 
   <!-- .......Extra secrion :: pet foods ...... -->
 
