@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- tailwind+Daisy -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- ..font aweome -->
+     <script src="https://kit.fontawesome.com/6fb410e074.js" crossorigin="anonymous"></script>
+
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'theme-color': '#FFDC26',
+                'paragraph-color': '#111111',
+                
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+      <nav class="flex justify-between items-center">
+        <div class="flex flex-nowrap text-center items-center">
+            <img class="pl-5" src="assets/logo-header.png" alt="">
+            <h1 class="adlam-display invisible md:visible lg:visible  2xl:visible">Browse<span class="text-theme-color">4</span>pets</h1>
+            <i class=" sm:visible pl-[300%] md:invisible lg:invisible 2xl:invisible fa-solid fa-bars"></i>
+        </div>
+
+        <div>
+            <ul class="flex gap-5 invisible md:visible lg:visible">
+                <li><a>Find Pets</a></li>
+                <li><a>breads</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="flex items-center  text-center gap-5 invisible md:visible lg:visible pr-5 mt-5">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <button class="btn btn-outline btn-warning invisible md:visible lg:visible">Log In</button>
+            <a class="btn  bg-theme-color text-black">Register</a>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- lkjhjjg -->
+     
+        
+    <!-- nav end  -->
+</body>
+</html>

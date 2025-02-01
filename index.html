@@ -37,66 +37,39 @@
       
      .sora {
           font-family: "Sora", serif;}
+
+       *{
+          margin: 0 px;
+          padding: 0 px;
+          }
    </style>
 
 </head>
 <body class="">
   <!-- navbar -->
   <header class="md:container md:mx-auto"> 
-    <nav class="">
-     <div class="navbar bg-base-100">
-         <div class="flex-1">
-           <div class="dropdown">
-               <!-- hamburgr -->
-             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
-              </div>
+    <nav class="flex justify-between items-center">
+      <div class="flex flex-nowrap text-center items-center">
+          <img class="pl-5" src="assets/logo-header.png" alt="">
+          <h1 class="adlam-display invisible md:visible lg:visible  2xl:visible">Browse<span class="text-theme-color">4</span>pets</h1>
+          <i class=" sm:visible pl-[300%] md:invisible lg:invisible 2xl:invisible fa-solid fa-bars"></i>
+      </div>
 
-             <ul
-               tabindex="0"
-               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-               <li><a>Find Pets</a></li>
-               <li><a>breads</a></li>
-               <li><a>Contact Us</a></li>
-             </ul>
-           </div>
-
-           <!--.......... large device... --> 
-
-
-           <!-- nav-left-->
-            
-            <img src="assets/logo-header.png" alt="">
-            <a class="font-bold text-xl "> Browser<span class="text-theme-color">4</span>pets</a>
-           
-           </div>
-              <!-- nav-middle -->
-           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+      <div>
+          <ul class="flex gap-5 invisible md:visible lg:visible">
               <li><a>Find Pets</a></li>
               <li><a>breads</a></li>
               <li><a>Contact Us</a></li>
-            </ul>
-           </div>
-              <!-- nav-right -->
-            <div class=" flex justify-between gap-3">
-            <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <button class="btn btn-outline btn-warning">Log In</button>
-            <a class="btn  bg-theme-color text-black">Register</a>
-           </div>
-       </div>
+          </ul>
+      </div>
+
+      <div class="flex items-center  text-center gap-5 invisible md:visible lg:visible pr-5 mt-5">
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <button class="btn btn-outline btn-warning invisible md:visible lg:visible">Log In</button>
+          <a class="btn  bg-theme-color text-black">Register</a>
+      </div>
     </nav>
   <!-- navend -->
   
@@ -441,10 +414,107 @@
    </section>
 
   <!-- Everyday low Price section -->
+
+  <section class="bg-zinc-100 mb-5 pb-10">
+
+      <h1 class="adlam-display text-[36px] my-8 px-5
+      ">Everyday low Price</h1>
+
+    
+  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 gap-4 px-5 w-full">
+    
+    <div class=" flex-row card bg-gradient-to-br from-[#F8CCFB] via-[#F8CCFB] to-[#ACD2FD] shadow-xl  ">
+      <!-- card>big -->
+       <div class="px-5 py-5 flex-col  "> 
+           <!-- description -->
+       <p class=" sora text-[20px]">Under Price</p>
+       <h2 class="adlam-display text-[30px]
+       ">Pet Grooming Mitt</h2>
+       <p class="adlam-display text-[24px]
+       ">(Easy Hair Removal)</p>
+       <h1 class="adlam-display text-[50px]
+       ">$7.99</h1>
+      </div>
+
+      <figure class=" bottom-0 right-0">
+        <img src="assets/cute-dog-mid.png" alt="">
+      </figure>
+  </div>
+          <!--big-end !.. -->
+
+    <div class=" flex-row  card bg-gradient-to-br from-white via-[#e2d4a4] to-[#F9DF8A] shadow-xl">
+      <!-- card>small -->
+       <div class="px-7 py-7">
+        <h2 class="adlam-display text-[30px]
+        ">T-Shirt for Dogs</h2>
+        <h1 class="text-theme-color adlam-display text-[52px]
+        ">$7.99</h1>
+       </div>
+
+       <figure class=" bottom-0 right-0">
+         <img src="assets/cute-pet-mid.png" alt="">
+       </figure>
+    </div>
+  </div>
+  </section>
+
  </main>
+<!-- overlap card -->
+<div class=" relative -mb-36 mt-24  mx-6 md:mx-24 p-8 bg-[#FFF9F4] rounded-lg  card text-center z-10 card lg:card-side bg-base-100 shadow-xl">
+  <figure>
+    <img
+      src="assets/cute-pet-mid.png"
+      alt="Album" />
+  </figure>
+  <div class="card-body flex">
+    <h2 class="adlam-display text-[45px]
+    ">Get Pawsome News!</h2>
+    <p class="sora ">Exclusive training tips, ticks, product deals and more.</p>
+     <input class="border w-[300px] h-10 " type="text" placeholder="Enter your email....">
+     <button class="bg-theme-color w-28 rounded-sm"> subscribe</button>
+    </div>
+  </div>
+</div>
 
- <footer>
+ 
+<!-- footer main -->
 
+<footer class=" pt-12 lg:pt-100 footer bg-[#FFDC2680] text-blak-content p-10  -mb-10 h-auto ">
+<!-- ,,,,,,, -->
+  <aside class="pt-36">
+    <div class="flex-row">
+     <img src="assets/logo-footer.png" alt="">
+     <p>Browse <span class="text-theme-color">4</span>Pets </p>
+    </div>
+      
+      <p> Discover a world of treats, toys, and <br> essentials handpicked for your furry friends
+     </p>
+  </aside>
+  <nav class="pt-36">
+    <h6 class="footer-title"> </h6>
+    <a class="link link-hover">Find a pet</a>
+    <a class="link link-hover">Breeds</a>
+    <a class="link link-hover">Contact us</a>
+  </nav>
+  <nav class="pt-36">
+    <h6 class="footer-title">Follow Us</h6>
+    <div class="grid grid-flow-col gap-4">
+      <a> 
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a>
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a>
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a>
+        <i class="fa-brands fa-square-youtube"></i>
+      </a>
+
+    </div>
+  </nav>
  </footer>
 
     
